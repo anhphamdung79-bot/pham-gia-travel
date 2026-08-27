@@ -25,14 +25,14 @@
         * {font-family: 'DM Sans', sans-serif;}
         html {scroll-behavior: smooth;}
         .card-hover {transition: all 0.3s ease;}
-        .card-hover:hover {transform: translateY(-6px); box-shadow: 0 20px 40px rgba(13,148,136,0.15);}
+        .card-hover:hover {transform: translateY(-6px); box-shadow: 0 20px 40px rgba(13,148,136,0.15);} 
         .fade-in {opacity: 0; transform: translateY(30px); animation: fadeIn 0.8s forwards;}
         @keyframes fadeIn {to {opacity:1; transform: translateY(0);}}
         .gradient-text {background: linear-gradient(90deg, #0d9488, #c4693d); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
         .img-hover-zoom {overflow: hidden; border-radius: inherit;}
         .img-hover-zoom img {transition: transform 0.5s ease;}
         .img-hover-zoom:hover img {transform: scale(1.1);}
-        .modal {display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.9); backdrop-filter: blur(5px);}
+        .modal {display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.9); backdrop-filter: blur(5px);} 
         .modal-content {margin: auto; display: block; width: 80%; max-width: 900px; max-height: 80vh; object-fit: contain; border-radius: 12px;}
         .close-modal {position: absolute; top: 30px; right: 40px; color: #fff; font-size: 45px; font-weight: bold; transition: 0.3s; cursor: pointer; z-index: 1001;}
         .close-modal:hover {color: #0d9488;}
@@ -80,7 +80,7 @@
             <div>
                 <span class="inline-block bg-primary/10 text-primary font-semibold text-sm px-4 py-1 rounded-full mb-4">🚗 DỊCH VỤ UY TÍN - GIÁ TỐT NHẤT</span>
                 <h2 class="text-3xl md:text-4xl font-bold mb-5">Thuê xe du lịch <span class="gradient-text">Đường Dài</span> cùng bạn đi muôn nơi</h2>
-                <p class="text-gray-text text-lg mb-6">Đặt xe đi tỉnh, đi tour du lịch với tài xế kinh nghiệm, xe mới sạch sẽ, giá luôn tốt nhất. Hẹn giờ đón tận nơi, đảm bảo an toàn & thoải mái.</p>
+                <p class="text-gray-text text-lg mb-6">Đặt xe đi tỉnh, đi tour du lịch với tài xế kinh nghiệm, xe mới sạch sẽ, giá luôn tốt nhất. Hẹn giờ đón tậ[...]</p>
                 <div class="flex flex-wrap gap-4 mb-8">
                     <a href="tel:0907546828" class="bg-primary text-white px-6 py-3 rounded-xl font-semibold text-lg">📞 Gọi đặt xe ngay</a>
                     <a href="#price" class="border border-primary text-primary px-6 py-3 rounded-xl font-semibold text-lg">Xem bảng giá</a>
@@ -92,7 +92,7 @@
                 </div>
             </div>
             <div class="bg-white rounded-3xl shadow-xl p-4 img-hover-zoom">
-                <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1200&auto=format&fit=crop" alt="Xe du lịch" class="w-full h-auto rounded-2xl cursor-pointer" onclick="openModal(this.src)">
+                <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1200&auto=format&fit=crop" alt="Xe du lịch" class="w-full h-auto rounded-2xl cursor-pointer" onclick[...]>
             </div>
         </div>
     </div>
@@ -107,7 +107,7 @@
         </div>
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div class="card-hover border rounded-2xl p-5 bg-light-bg">
-                <img src="https://images.unsplash.com/photo-1542282088-1a8e16c60e59?q=80&w=600&auto=format&fit=crop" alt="Xe 4 chỗ" class="w-full h-40 object-cover rounded-xl mb-4 cursor-pointer" onclick="openModal(this.src)">
+                <img src="https://images.unsplash.com/photo-1542282088-1a8e16c60e59?q=80&w=600&auto=format&fit=crop" alt="Xe 4 chỗ" class="w-full h-40 object-cover rounded-xl mb-4 cursor-pointe[...]>
                 <h4 class="text-lg font-bold">Xe 4 chỗ</h4>
                 <p class="text-gray-text text-sm">Gia đình nhỏ, cặp đôi</p>
                 <p class="font-bold text-primary mt-2">Từ 650.000đ/ngày</p>
@@ -115,14 +115,14 @@
             </div>
             <div class="card-hover border-2 border-primary/20 rounded-2xl p-5 bg-light-bg relative">
                 <span class="absolute top-2 right-2 bg-primary text-white text-xs font-bold px-2 py-1 rounded-full">PHỔ BIẾN</span>
-                <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?q=80&w=600&auto=format&fit=crop" alt="Xe 7 chỗ" class="w-full h-40 object-cover rounded-xl mb-4 cursor-pointer" onclick="openModal(this.src)">
+                <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?q=80&w=600&auto=format&fit=crop" alt="Xe 7 chỗ" class="w-full h-40 object-cover rounded-xl mb-4 cursor-poi[...]>
                 <h4 class="text-lg font-bold">Xe 7 chỗ</h4>
                 <p class="text-gray-text text-sm">Gia đình lớn, nhóm bạn</p>
                 <p class="font-bold text-primary mt-2">Từ 850.000đ/ngày</p>
                 <a href="tel:0907546828" class="text-primary font-semibold text-sm">Đặt xe →</a>
             </div>
             <div class="card-hover border rounded-2xl p-5 bg-light-bg">
-                <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?q=80&w=600&auto=format&fit=crop" alt="Xe 16 chỗ" class="w-full h-40 object-cover rounded-xl mb-4 cursor-pointer" onclick="openModal(this.src)">
+                <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?q=80&w=600&auto=format&fit=crop" alt="Xe 16 chỗ" class="w-full h-40 object-cover rounded-xl mb-4 cursor-point[...]>
                 <h4 class="text-lg font-bold">Xe 16 chỗ</h4>
                 <p class="text-gray-text text-sm">Đoàn du lịch, công ty</p>
                 <p class="font-bold text-secondary mt-2">Từ 1.500.000đ/ngày</p>
@@ -130,7 +130,7 @@
             </div>
             <div class="card-hover border rounded-2xl p-5 bg-light-bg relative">
                 <span class="absolute top-2 right-2 bg-secondary text-white text-xs font-bold px-2 py-1 rounded-full">VIP</span>
-                <img src="https://images.unsplash.com/photo-1563720360174-0456b6d4a293?q=80&w=600&auto=format&fit=crop" alt="Limousine VIP" class="w-full h-40 object-cover rounded-xl mb-4 cursor-pointer" onclick="openModal(this.src)">
+                <img src="https://images.unsplash.com/photo-1563720360174-0456b6d4a293?q=80&w=600&auto=format&fit=crop" alt="Limousine VIP" class="w-full h-40 object-cover rounded-xl mb-4 cursor-[...]>
                 <h4 class="text-lg font-bold">Limousine VIP</h4>
                 <p class="text-gray-text text-sm">Dịch vụ cao cấp</p>
                 <p class="font-bold text-secondary mt-2">Từ 2.200.000đ/ngày</p>
@@ -236,7 +236,7 @@
             <div>
                 <h5 class="text-lg font-bold mb-4 text-primary">🏢 Lagi, Bình Thuận</h5>
                 <div class="map-container">
-                    <iframe src="https://maps.app.goo.gl/UF3C5kDM77pF6YLSA" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe id="mapFrame-Lagi" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
             
@@ -244,10 +244,28 @@
             <div>
                 <h5 class="text-lg font-bold mb-4 text-secondary">🏢 TP. Hồ Chí Minh (Bình Tân)</h5>
                 <div class="map-container">
-                    <iframe src="https://maps.app.goo.gl/kwCCmftvQRCjPPuf9?g_st=ac" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe id="mapFrame-HCM" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
+
+        <!-- Load local config (config.js) to populate MAPS API key.
+             Copy config.example.js -> config.js locally and fill MAPS_API_KEY.
+             Do NOT commit config.js. -->
+        <script src="/config.js"></script>
+        <script>
+          (function(){
+            function setMap(frameId, query, fallback){
+              var key = window.__APP_CONFIG__ && window.__APP_CONFIG__.MAPS_API_KEY;
+              var iframe = document.getElementById(frameId);
+              if (!iframe) return;
+              if (key) iframe.src = 'https://www.google.com/maps/embed/v1/place?key=' + key + '&q=' + encodeURIComponent(query);
+              else iframe.src = fallback;
+            }
+            setMap('mapFrame-Lagi', 'Pham Gia Travel, Lagi, Binh Thuan', 'https://maps.app.goo.gl/UF3C5kDM77pF6YLSA');
+            setMap('mapFrame-HCM', 'Pham Gia Travel, Binh Tan, Ho Chi Minh City', 'https://maps.app.goo.gl/kwCCmftvQRCjPPuf9?g_st=ac');
+          })();
+        </script>
     </div>
 </section>
 
