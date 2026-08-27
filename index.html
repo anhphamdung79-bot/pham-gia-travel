@@ -40,6 +40,8 @@
         .gallery-item {border-radius: 16px; overflow: hidden; cursor: pointer; height: 200px;}
         .gallery-item img {width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;}
         .gallery-item:hover img {transform: scale(1.08);}
+        .map-container {border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(13,148,136,0.1);}
+        .map-container iframe {width: 100%; height: 400px; border: none;}
     </style>
 </head>
 <body class="bg-light-bg text-dark">
@@ -212,13 +214,39 @@
 </section>
 
 <section id="contact" class="py-16 bg-light-bg">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h3 class="text-3xl font-bold mb-5">📢 Đặt xe ngay hôm nay!</h3>
-        <p class="text-lg text-gray-text mb-6">Báo giá miễn phí, tư vấn tận tình. Đón trả đúng giờ, đúng địa điểm.</p>
-        <div class="bg-gradient-to-r from-primary to-secondary text-white p-8 rounded-3xl">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h3 class="text-3xl font-bold mb-5">📢 Đặt xe ngay hôm nay!</h3>
+            <p class="text-lg text-gray-text mb-6">Báo giá miễn phí, tư vấn tận tình. Đón trả đúng giờ, đúng địa điểm.</p>
+        </div>
+        
+        <div class="bg-gradient-to-r from-primary to-secondary text-white p-8 rounded-3xl mb-12">
             <p class="text-xl mb-4">📞 Hotline / Zalo: <strong class="text-2xl">0907 546 828</strong></p>
             <p class="mb-2">📍 Lagi - Bình Thuận & TP. Hồ Chí Minh</p>
             <p>👤 Chủ quản: Phạm Anh Dũng</p>
+        </div>
+
+        <!-- Google Maps Section -->
+        <div class="text-center mb-8">
+            <h4 class="text-2xl font-bold mb-8">📍 Vị Trí Chi Nhánh Của Chúng Tôi</h4>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Map Lagi -->
+            <div>
+                <h5 class="text-lg font-bold mb-4 text-primary">🏢 Lagi, Bình Thuận</h5>
+                <div class="map-container">
+                    <iframe src="https://maps.app.goo.gl/UF3C5kDM77pF6YLSA" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            
+            <!-- Map TP.HCM -->
+            <div>
+                <h5 class="text-lg font-bold mb-4 text-secondary">🏢 TP. Hồ Chí Minh (Bình Tân)</h5>
+                <div class="map-container">
+                    <iframe src="https://maps.app.goo.gl/kwCCmftvQRCjPPuf9?g_st=ac" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
         </div>
     </div>
 </section>
