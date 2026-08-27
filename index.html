@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Du Lịch Đường Dài Travel | Thuê Xe Du Lịch Chất Lượng & Giá Rẻ</title>
+    <meta name="description" content="Thuê xe du lịch giá rẻ tại Lagi, Bình Thuận. Xe 4-16 chỗ, Limousine VIP. Uy tín, giá tốt nhất. Liên hệ: 0907 546 828">
+    <meta name="keywords" content="thue xe du lịch, xe du lịch giá rẻ, thuê xe đi tỉnh, xe 7 chỗ, xe 16 chỗ, limousine VIP, Lagi, Bình Thuận, Phạm Anh Dũng">
+    <meta name="author" content="Du Lịch Đường Dài Travel">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            --color-primary: #0d9488;
+            --color-primary-light: #ccfbf1;
+            --color-secondary: #c4693d;
+            --color-secondary-light: #fef2e8;
+            --color-dark: #0f172a;
+            --color-gray-text: #64748b;
+            --color-light-bg: #f8fafc;
+        }
+    </style>
+    <style>
+        * {font-family: 'DM Sans', sans-serif;}
+        html {scroll-behavior: smooth;}
+        .card-hover {transition: all 0.3s ease;}
+        .card-hover:hover {transform: translateY(-6px); box-shadow: 0 20px 40px rgba(13,148,136,0.15);}
+        .fade-in {opacity: 0; transform: translateY(30px); animation: fadeIn 0.8s forwards;}
+        @keyframes fadeIn {to {opacity:1; transform: translateY(0);}}
+        .gradient-text {background: linear-gradient(90deg, #0d9488, #c4693d); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+        .img-hover-zoom {overflow: hidden; border-radius: inherit;}
+        .img-hover-zoom img {transition: transform 0.5s ease;}
+        .img-hover-zoom:hover img {transform: scale(1.1);}
+        .modal {display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.9); backdrop-filter: blur(5px);}
+        .modal-content {margin: auto; display: block; width: 80%; max-width: 900px; max-height: 80vh; object-fit: contain; border-radius: 12px;}
+        .close-modal {position: absolute; top: 30px; right: 40px; color: #fff; font-size: 45px; font-weight: bold; transition: 0.3s; cursor: pointer; z-index: 1001;}
+        .close-modal:hover {color: #0d9488;}
+        .gallery-grid {display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px;}
+        .gallery-item {border-radius: 16px; overflow: hidden; cursor: pointer; height: 200px;}
+        .gallery-item img {width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;}
+        .gallery-item:hover img {transform: scale(1.08);}
+    </style>
+</head>
+<body class="bg-light-bg text-dark">
+
+<div id="imageModal" class="modal">
+    <span class="close-modal" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+</div>
+
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-4">
+            <a href="#" class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-primary-light flex items-center justify-center text-primary">🚗</div>
+                <div>
+                    <h1 class="text-xl font-bold text-dark">Du Lịch Đường Dài</h1>
+                    <p class="text-[10px] text-gray-text -mt-1">TRAVEL</p>
+                </div>
+            </a>
+            <nav class="hidden md:flex items-center gap-6">
+                <a href="#home" class="font-medium hover:text-primary">Trang chủ</a>
+                <a href="#services" class="font-medium hover:text-primary">Dịch vụ</a>
+                <a href="#cars" class="font-medium hover:text-primary">Loại xe</a>
+                <a href="#gallery" class="font-medium hover:text-primary">Hình ảnh</a>
+                <a href="#price" class="font-medium hover:text-primary">Bảng giá</a>
+                <a href="#contact" class="font-medium hover:text-primary">Liên hệ</a>
+            </nav>
+            <a href="tel:0907546828" class="bg-primary text-white px-4 py-2 rounded-xl font-semibold text-sm">📞 0907 546 828</a>
+        </div>
+    </div>
+</header>
+
+<section id="home" class="bg-gradient-to-br from-primary-light via-white to-secondary-light py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+            <div>
+                <span class="inline-block bg-primary/10 text-primary font-semibold text-sm px-4 py-1 rounded-full mb-4">🚗 DỊCH VỤ UY TÍN - GIÁ TỐT NHẤT</span>
+                <h2 class="text-3xl md:text-4xl font-bold mb-5">Thuê xe du lịch <span class="gradient-text">Đường Dài</span> cùng bạn đi muôn nơi</h2>
+                <p class="text-gray-text text-lg mb-6">Đặt xe đi tỉnh, đi tour du lịch với tài xế kinh nghiệm, xe mới sạch sẽ, giá luôn tốt nhất. Hẹn giờ đón tận nơi, đảm bảo an toàn & thoải mái.</p>
+                <div class="flex flex-wrap gap-4 mb-8">
+                    <a href="tel:0907546828" class="bg-primary text-white px-6 py-3 rounded-xl font-semibold text-lg">📞 Gọi đặt xe ngay</a>
+                    <a href="#price" class="border border-primary text-primary px-6 py-3 rounded-xl font-semibold text-lg">Xem bảng giá</a>
+                </div>
+                <div class="grid grid-cols-3 gap-4">
+                    <div><p class="text-2xl font-bold text-primary">5+</p><p class="text-gray-text text-sm">Năm kinh nghiệm</p></div>
+                    <div><p class="text-2xl font-bold text-primary">24/7</p><p class="text-gray-text text-sm">Phục vụ mọi lúc</p></div>
+                    <div><p class="text-2xl font-bold text-primary">100%</p><p class="text-gray-text text-sm">Khách hài lòng</p></div>
+                </div>
+            </div>
+            <div class="bg-white rounded-3xl shadow-xl p-4 img-hover-zoom">
+                <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1200&auto=format&fit=crop" alt="Xe du lịch" class="w-full h-auto rounded-2xl cursor-pointer" onclick="openModal(this.src)">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="cars" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <p class="text-primary font-semibold text-sm uppercase mb-2">ĐÔI XE CỦA CHÚNG TÔI</p>
+            <h3 class="text-3xl font-bold mb-3">Các loại xe cho thuê</h3>
+            <p class="text-gray-text">Lựa chọn phương tiện phù hợp với hành trình</p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="card-hover border rounded-2xl p-5 bg-light-bg">
+                <img src="https://images.unsplash.com/photo-1542282088-1a8e16c60e59?q=80&w=600&auto=format&fit=crop" alt="Xe 4 chỗ" class="w-full h-40 object-cover rounded-xl mb-4 cursor-pointer" onclick="openModal(this.src)">
+                <h4 class="text-lg font-bold">Xe 4 chỗ</h4>
+                <p class="text-gray-text text-sm">Gia đình nhỏ, cặp đôi</p>
+                <p class="font-bold text-primary mt-2">Từ 650.000đ/ngày</p>
+                <a href="tel:0907546828" class="text-primary font-semibold text-sm">Đặt xe →</a>
+            </div>
+            <div class="card-hover border-2 border-primary/20 rounded-2xl p-5 bg-light-bg relative">
+                <span class="absolute top-2 right-2 bg-primary text-white text-xs font-bold px-2 py-1 rounded-full">PHỔ BIẾN</span>
+                <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?q=80&w=600&auto=format&fit=crop" alt="Xe 7 chỗ" class="w-full h-40 object-cover rounded-xl mb-4 cursor-pointer" onclick="openModal(this.src)">
+                <h4 class="text-lg font-bold">Xe 7 chỗ</h4>
+                <p class="text-gray-text text-sm">Gia đình lớn, nhóm bạn</p>
+                <p class="font-bold text-primary mt-2">Từ 850.000đ/ngày</p>
+                <a href="tel:0907546828" class="text-primary font-semibold text-sm">Đặt xe →</a>
+            </div>
+            <div class="card-hover border rounded-2xl p-5 bg-light-bg">
+                <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?q=80&w=600&auto=format&fit=crop" alt="Xe 16 chỗ" class="w-full h-40 object-cover rounded-xl mb-4 cursor-pointer" onclick="openModal(this.src)">
+                <h4 class="text-lg font-bold">Xe 16 chỗ</h4>
+                <p class="text-gray-text text-sm">Đoàn du lịch, công ty</p>
+                <p class="font-bold text-secondary mt-2">Từ 1.500.000đ/ngày</p>
+                <a href="tel:0907546828" class="text-secondary font-semibold text-sm">Đặt xe →</a>
+            </div>
+            <div class="card-hover border rounded-2xl p-5 bg-light-bg relative">
+                <span class="absolute top-2 right-2 bg-secondary text-white text-xs font-bold px-2 py-1 rounded-full">VIP</span>
+                <img src="https://images.unsplash.com/photo-1563720360174-0456b6d4a293?q=80&w=600&auto=format&fit=crop" alt="Limousine VIP" class="w-full h-40 object-cover rounded-xl mb-4 cursor-pointer" onclick="openModal(this.src)">
+                <h4 class="text-lg font-bold">Limousine VIP</h4>
+                <p class="text-gray-text text-sm">Dịch vụ cao cấp</p>
+                <p class="font-bold text-secondary mt-2">Từ 2.200.000đ/ngày</p>
+                <a href="tel:0907546828" class="text-secondary font-semibold text-sm">Đặt xe →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="gallery" class="py-16 bg-light-bg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <p class="text-secondary font-semibold text-sm uppercase mb-2">HÌNH ẢNH THỰC TẾ</p>
+            <h3 class="text-3xl font-bold mb-3">🚗 Bộ sưu tập xe đẹp</h3>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item shadow-md" onclick="openModal('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1000&auto=format&fit=crop')">
+                <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=600&auto=format&fit=crop" alt="Xe du lịch">
+            </div>
+            <div class="gallery-item shadow-md" onclick="openModal('https://images.unsplash.com/photo-1503376780359-7e91d5c68f8e?q=80&w=1000&auto=format&fit=crop')">
+                <img src="https://images.unsplash.com/photo-1503376780359-7e91d5c68f8e?q=80&w=600&auto=format&fit=crop" alt="Xe sang trọng">
+            </div>
+            <div class="gallery-item shadow-md" onclick="openModal('https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?q=80&w=1000&auto=format&fit=crop')">
+                <img src="https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?q=80&w=600&auto=format&fit=crop" alt="Xe cao cấp">
+            </div>
+            <div class="gallery-item shadow-md" onclick="openModal('https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?q=80&w=1000&auto=format&fit=crop')">
+                <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?q=80&w=600&auto=format&fit=crop" alt="Xe đường dài">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="price" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <p class="text-primary font-semibold text-sm uppercase mb-2">BẢNG GIÁ THAM KHẢO</p>
+            <h3 class="text-3xl font-bold mb-3">Giá thuê xe du lịch</h3>
+        </div>
+        <div class="overflow-x-auto rounded-2xl border shadow-sm">
+            <table class="w-full text-left">
+                <thead class="bg-primary-light/50">
+                    <tr>
+                        <th class="p-3 font-bold">Loại xe</th>
+                        <th class="p-3 font-bold">Số chỗ</th>
+                        <th class="p-3 font-bold">Giá/ngày</th>
+                        <th class="p-3 font-bold">Đi tỉnh</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-t">
+                        <td class="p-3 font-semibold">Xe 4 chỗ</td>
+                        <td class="p-3">4 người</td>
+                        <td class="p-3 font-bold text-primary">650.000đ</td>
+                        <td class="p-3">1.200.000đ</td>
+                    </tr>
+                    <tr class="border-t bg-primary-light/30">
+                        <td class="p-3 font-semibold">Xe 7 chỗ</td>
+                        <td class="p-3">7 người</td>
+                        <td class="p-3 font-bold text-primary">850.000đ</td>
+                        <td class="p-3">1.500.000đ</td>
+                    </tr>
+                    <tr class="border-t">
+                        <td class="p-3 font-semibold">Xe 16 chỗ</td>
+                        <td class="p-3">16 người</td>
+                        <td class="p-3 font-bold text-primary">1.500.000đ</td>
+                        <td class="p-3">2.500.000đ</td>
+                    </tr>
+                    <tr class="border-t">
+                        <td class="p-3 font-semibold">Limousine VIP</td>
+                        <td class="p-3">9 người</td>
+                        <td class="p-3 font-bold text-secondary">2.200.000đ</td>
+                        <td class="p-3">3.500.000đ</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="mt-4 p-4 bg-primary-light rounded-xl">
+            <p class="text-sm"><strong>📞 Hotline:</strong> 0907 546 828 — Liên hệ để báo giá chính xác!</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="py-16 bg-light-bg">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h3 class="text-3xl font-bold mb-5">📢 Đặt xe ngay hôm nay!</h3>
+        <p class="text-lg text-gray-text mb-6">Báo giá miễn phí, tư vấn tận tình. Đón trả đúng giờ, đúng địa điểm.</p>
+        <div class="bg-gradient-to-r from-primary to-secondary text-white p-8 rounded-3xl">
+            <p class="text-xl mb-4">📞 Hotline / Zalo: <strong class="text-2xl">0907 546 828</strong></p>
+            <p class="mb-2">📍 Lagi - Bình Thuận & TP. Hồ Chí Minh</p>
+            <p>👤 Chủ quản: Phạm Anh Dũng</p>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-dark text-white py-6 text-center">
+    <p class="font-bold text-lg">Du Lịch Đường Dài Travel</p>
+    <p class="text-gray-400 text-sm">© 2026 — Thuê xe du lịch chất lượng, giá tốt nhất</p>
+</footer>
+
+<script>
+    function openModal(imgSrc) {
+        document.getElementById('imageModal').style.display = 'block';
+        document.getElementById('modalImage').src = imgSrc;
+        document.body.style.overflow = 'hidden';
+    }
+    function closeModal() {
+        document.getElementById('imageModal').style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+    window.onclick = function(e) {
+        const modal = document.getElementById('imageModal');
+        if (e.target === modal) closeModal();
+    }
+</script>
+</body>
+</html>
